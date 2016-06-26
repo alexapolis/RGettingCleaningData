@@ -14,6 +14,21 @@
 * Summarize data by storing the mean for grouped rows in each variable -> ActivityMeans
 
 #ActivityData
+
+Individual experiment data each row
+
+Subject is an integer identifier for the participant completing the experiment
+
+Activity is adescriptive name for the activity with options
+* LAYING
+* SITTING
+* STANDING
+* WALKING
+* WALKING_DOWNSTAIRS
+* WALKING_UPSTAIRS
+
+Other variables are normalized and bounded within [-1,1]
+
 ##Variables
 
 * Subject
@@ -86,6 +101,21 @@
 * fBodyBodyGyroJerkMag-std()
 
 #ActivityMeans
+
+Mean for experiment data grouped by Subject and Activity
+
+Subject is an integer identifier for the participant completing the experiment
+
+Activity is adescriptive name for the activity with options
+* LAYING
+* SITTING
+* STANDING
+* WALKING
+* WALKING_DOWNSTAIRS
+* WALKING_UPSTAIRS
+
+Other variables are normalized and bounded within [-1,1]
+
 ##Variables
 
 * Subject
