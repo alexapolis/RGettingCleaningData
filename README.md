@@ -61,7 +61,9 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 For more information about the R script 'run_analysis.R': david@alexapolis.com
 
 ##License:
+
 License recognition carried from the source data documentation:
 Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. 
 Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. 
