@@ -5,8 +5,8 @@
 # Key script outputs:
 # ActivityData = Mean and Std variables organized with descriptive column names, 
 #                descriptive activity labels, and subject identifier
-# ActivityMeans = Mean calculated for variable in the ActivityData set
-#               grrouped by activity and subject
+# ActivityMeans = Mean calculated for variables in the ActivityData set
+#               grouped by activity and subject
 
 # Information about the original data set:
 # http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
