@@ -23,11 +23,18 @@
 
 library(dplyr)
 
+# Download and unzip data if needed
 if(!file.exists("./data")){dir.create("./data")}
-fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl, destfile = "./data/UCI HAR Dataset.zip")
-rm(fileUrl)
-unzip("./data/UCI HAR Dataset.zip", overwrite = TRUE, exdir = "./data")
+if(!file.exists("./data/UCI HAR Dataset"))
+{
+    if(!file.exists("./data/UCI HAR Dataset.zip"))
+    {
+        fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
+        download.file(fileUrl, destfile = "./data/UCI HAR Dataset.zip")
+        rm(fileUrl)
+    }
+    unzip("./data/UCI HAR Dataset.zip", overwrite = TRUE, exdir = "./data")
+}
 
 # Read the test data set and the training data set
 # Merge the two (no need to maintain history of which record came from which set)
@@ -79,5 +86,5 @@ rm(colKeep)
 
 # Create summary with the average of each variable for each activity and each subject
 ActivityMeans <- ActivityData %>% group_by(Subject, Activity) %>%
-                    summarize_each(funs(mean))
+  summarize_each(funs(mean))
 
