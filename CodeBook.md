@@ -1,8 +1,8 @@
 #run_analysis.R
 
 * load dplyr
-* Download data
-* Unzip
+* Download data if needed
+* Unzip if needed
 * Load test and training data and bind rows
 * Load features data and attach readable variable names to columns
 * Load activity label data and translation table, bind test and training sets
